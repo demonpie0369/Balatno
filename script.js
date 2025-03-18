@@ -126,7 +126,7 @@ function drawimage(image, x, y, width, height) {
     offset = 0;
     gl.vertexAttribPointer(texcoord, size, type, normalise, stride, offset);
 
-    gl.uniform2f(resattribloc, gl.canvas.width, gl.canvas.height);
+    gl.uniform2f(resuniformloc, gl.canvas.width, gl.canvas.height);
 
     let primitivetype = gl.TRIANGLES;
     offset = 0;
