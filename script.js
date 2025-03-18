@@ -212,9 +212,9 @@ let primitivetype = gl.TRIANGLES;
 let count = 6;
 gl.drawArrays(primitivetype, offset, count);
 
-//sillyimage = document.getElementById("enhancements");
-let sillyimage = new Image();
-sillyimage.src = "https://webglfundamentals.org/webgl/resources/leaves.jpg";
+sillyimage = document.getElementById("enhancements");
+//let sillyimage = new Image();
+//sillyimage.src = "https://webglfundamentals.org/webgl/resources/leaves.jpg";
 sillyimage.onload = function() {
     drawimage(sillyimage, 80, 80, cardwidth, cardheight);
 }
