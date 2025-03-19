@@ -84,12 +84,18 @@ function drawimage(image, x, y, width, height) {
     let texcoordbuffer = gl.createBuffer();
     gl.bindBuffer(gl.ARRAY_BUFFER, texcoordbuffer);
     gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([
-        x, y,
-        x + width, y,
-        x, y + height,
-        x, y + height,
-        x + width, y,
-        x + width, y + height,
+        //x, y,
+        //x + width, y,
+        //x, y + height,
+        //x, y + height,
+        //x + width, y,
+        //x + width, y + height,
+        -1, -1,
+        1, -1,
+        -1, 1,
+        -1, 1,
+        1, -1,
+        1, 1,
     ]), gl.STATIC_DRAW);
     gl.enableVertexAttribArray(texcoord);
     gl.vertexAttribPointer(texcoord, 2, gl.FLOAT, false, 0, 0);
