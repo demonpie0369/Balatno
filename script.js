@@ -69,12 +69,12 @@ let positionbuffer = gl.createBuffer();
 gl.bindBuffer(gl.ARRAY_BUFFER, positionbuffer);
 
 let positions = [
-    52, 73,
-    730, 73,
-    52, 520,
-    52, 520,
-    730, 73,
-    730, 520
+    0, 0,
+    gl.canvas.width, 0,
+    0, gl.canvas.height,
+    0, gl.canvas.height,
+    gl.canvas.width, 0,
+    gl.canvas.width, gl.canvas.height
 ];
 gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(positions), gl.STATIC_DRAW);
 
